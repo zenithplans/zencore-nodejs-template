@@ -1,6 +1,6 @@
 import { JSONSchemaType } from "ajv";
 
-import type { IRequest } from "../../domain/types/";
+import type { IRequest } from "../../domain/types/application.types";
 
 const schema: JSONSchemaType<IRequest> = {
 	type: "object",

@@ -73,15 +73,14 @@ interface RouterOptions {
 	headers: IHttpHeaders;
 }
 
-
 interface IRequest {
 	foo: number;
 	bar?: string;
 }
 
-export { 	
+export {
 	IHttpErrorStatusCode,
 	IHttpSuccessStatusCode,
 	IRequest,
-	RouterOptions, 
+	RouterOptions,
 };

@@ -25,7 +25,10 @@ export default class ApplicationServer {
 		// TODO: exit process gracefully.
 		// TODO: setup error logging and monitoring for server failures
 		this._server.on("error", (error) => {
-			console.error("[CRITICAL] Encountered unhandled server failure, further investigation needed:::", error);
+			console.error(
+				"[CRITICAL] Encountered unhandled server failure, further investigation needed:::",
+				error,
+			);
 		});
 	}
 
@@ -35,7 +38,10 @@ export default class ApplicationServer {
 			serverConfig.LISTENING_HOST,
 			serverConfig.PENDING_CONNECTION_QUEUE_LENGTH,
 			() => {
-				console.info("[INFO] Server started listening on port :::", serverConfig.LISTENING_PORT);
+				console.info(
+					"[INFO] Server started listening on port :::",
+					serverConfig.LISTENING_PORT,
+				);
 			},
 		);
 	}
